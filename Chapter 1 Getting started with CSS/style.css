@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+    text-decoration: underline;
+    }
+    p {
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    li {
+        list-style-type: square;
+    }
+    li
+    {
+    list-style-position: inside;
+        }
