@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Formatting Context Created with Overflow</title>
+</head>
+<style>
+    img {
+        float:left;
+        margin-right: 10px;
+        width: 150px;
+        height: 150px;
+        }
+        div {
+        overflow:hidden; /* creates block formatting context */
+        }
+</style>
+<body>
+    <img src="python.jpg">
+<div>
+<h1>Python</h1>
+<p>Python can be used on a server to create web applications.</p>
+<p>Python can be used alongside software to create workflows.</p>
+</div>
+</body>
+</html>
