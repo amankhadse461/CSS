@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin property simplification</title>
+</head>
+<style>
+    p {
+        margin:1px; /* 1px margin in all directions */
+        /*equals to:*/
+        margin:1px 1px;
+        /*equals to:*/
+        margin:10px 1px 1px;
+        /*equals to:*/
+        margin:1px 1px 1px 1px;
+        }
+</style>
+<body>
+    <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991</p>
+</body>
+</html>
