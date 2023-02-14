@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering in relation to another item</title>
+</head>
+<style>
+    .content * {
+        box-sizing: border-box;
+        }
+        .content .position-container {
+        display: table;
+        }
+        .content .details {
+        display: table-cell;
+        vertical-align: middle;
+        width: 33.333333%;
+        padding: 30px;
+        font-size: 17px;
+        text-align: center;
+        }
+        .content .thumb {
+        width: 100%;
+        }
+        .content .thumb img {
+        width: 100%;
+        }
+        
+</style>
+<body>
+    <div class="content">
+        <div class="position-container">
+        <div class="thumb">
+        <img src="python.jpg">
+        </div>
+        <div class="details">
+        <p class="banner-title">Python</p>
+        <p class="banner-text">Python can be used on a server to create web applications.
+            Python can be used alongside software to create workflows.
+            Python can connect to database systems. It can also read and modify files.
+            Python can be used to handle big data and perform complex mathematics.
+            Python can be used for rapid prototyping, or for production-ready software development.</p>
+        <button class="btn">Click Here to learn more.</button>
+        </div>
+        </div>
+        </div>
+</body>
+</html>

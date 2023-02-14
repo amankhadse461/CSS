@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertically align dynamic height elements</title>
+</head>
+<style>
+    .vcenter--container {
+        display: table;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        }
+        .vcenter--helper {
+        display: table-cell;
+        vertical-align: middle;
+        }
+        .vcenter--content {
+        margin: 0 auto;
+        width: 200px;
+        }
+</style>
+<body>
+    <div class="vcenter--container">
+        <div class="vcenter--helper">
+        <div class="vcenter--content">
+            <img src="python.jpg" height="100px">
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+        </div>
+        </div>
+        </div>
+</body>
+</html>

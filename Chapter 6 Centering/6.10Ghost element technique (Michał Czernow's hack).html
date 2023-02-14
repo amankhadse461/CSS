@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost element technique (Michał Czernow's hack)</title>
+</head>
+<style>
+    /* This parent can be any width and height */
+.block {
+    text-align: center;
+    /* May want to do this if there is risk the container may be narrower than the element inside */
+    white-space: nowrap;
+    }
+    /* The ghost element */
+    .block:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    /* There is a gap between ghost element and .centered,
+    caused by space character rendered. Could be eliminated by
+    nudging .centered (nudge distance depends on font family),
+    or by zeroing font-size in .parent and resetting it back
+    (probably to 1rem) in .centered. */
+    margin-right: -0.25em;
+    }
+    /* The element to be centered, can also be of any width and height */
+.centered {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    white-space: normal; /* Resetting inherited nowrap behavior */
+    }
+</style>
+<body>
+    <div class="block">
+        <div class="centered">Python can be used on a server to create web applications.
+            Python can be used alongside software to create workflows.
+            Python can connect to database systems. It can also read and modify files.
+            Python can be used to handle big data and perform complex mathematics.
+            Python can be used for rapid prototyping, or for production-ready software development</div>
+    </div>
+</body>
+</html>
