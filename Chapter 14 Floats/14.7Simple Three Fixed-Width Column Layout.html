@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Three Fixed-Width Column Layout</title>
+</head>
+<style>
+    .wrapper {
+        width:600px;
+        background-color:aquamarine;
+        padding:20px;
+        /* Floated elements don't use any height. Adding "overflow:hidden;" forces the
+        parent element to expand to contain its floated children. */
+        overflow:hidden;
+        }
+        .left-sidebar {
+        width:150px;
+        background-color:red;
+        float:left;
+        }
+        .content {
+        width:300px;
+        background-color:blueviolet;
+        float:left;
+        }
+        .right-sidebar {
+        width:150px;
+        background-color:green;
+        float:right;
+        }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="left-sidebar">
+        <h1>Left Sidebar</h1>
+        <p>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones </p>
+        </div>
+        <div class="content">
+        <h1>Lion</h1>
+        <p>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones</p>
+        </div>
+        <div class="right-sidebar">
+        <h1>Right Sidebar</h1>
+        <p>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</p>
+        </div>
+        </div>
+</body>
+</html>

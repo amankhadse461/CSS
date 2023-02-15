@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Lazy/Greedy Layout</title>
+</head>
+<style>
+    .sidebar {
+        /* `display:table;` shrink-wraps the column */
+        display:table;
+        float:left;
+        background-color:red;
+        }
+        .content {
+        /* `overflow:hidden;` prevents `.content` from flowing under `.sidebar` */
+        overflow:hidden;
+        background-color:blue;
+        }
+        img{
+            height: 109px;
+        }
+</style>
+<body>
+    <div class="sidebar">
+        <h1>Animal</h1>
+        <img src="lion1.jpg">
+    </div>
+    <div class="content">
+        <h1>Lion</h1>
+        <p>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones . </p>
+        <p>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones </p>
+        </div>
+</body>
+</html>
