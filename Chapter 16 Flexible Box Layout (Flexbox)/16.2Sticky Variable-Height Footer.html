@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Variable-Height Footer</title>
+</head>
+<style>
+    html, body {
+        height: 100%;
+        }
+        body {
+        display: flex;
+        flex-direction: column;
+        }
+        .content {
+        /* Include `0 auto` for best browser compatibility. */
+        flex: 1 0 auto;
+        }
+        .header, .footer {
+        background-color: blueviolet;
+        color: greenyellow;
+        flex: none;
+        }
+</style>
+<body>
+    <div class="header">
+        <h2>Header</h2>
+        </div>
+        <div class="content">
+        <img src="elephant.jpg">
+        <h1>Elephants</h1>
+        <p>Elephants are the largest land mammals on earth and have distinctly massive bodies, large ears, and long trunks. They use their trunks to pick up objects, trumpet warnings, greet other elephants, or suck up water for drinking or bathing, among other uses.</p>
+        </div>
+        <div class="footer">
+        <h4>Footer</h4>
+</div>
+</body>
+</html>
