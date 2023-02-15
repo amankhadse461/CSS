@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More complex specificity example</title>
+</head>
+,<style>
+    div {
+        font-size: 7px;
+        border: 3px dotted pink;
+        background-color: yellow;
+        color: red;
+        }
+        body.mystyle > div.myotherstyle {
+        font-size: 11px;
+        background-color: beige;
+        }
+        #elmnt1 {
+        font-size: 24px;
+        border-color: red;
+        }
+</style>
+<body class="mystyle">
+    <div id="elmnt1" class="myotherstyle">
+    Hello, world!
+    </div>
+</body>
+</html>
