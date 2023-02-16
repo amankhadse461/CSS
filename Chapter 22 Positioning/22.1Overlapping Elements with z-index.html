@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping Elements with z-index</title>
+</head>
+<style>
+    div {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        }
+        div#div1 {
+        z-index: 1;
+        left: 0px;
+        top: 0px;
+        background-color: black;
+        }
+        div#div2 {
+        z-index: 3;
+        left: 100px;
+        top: 100px;
+        background-color: red;
+        }
+        div#div3 {
+        z-index: 2;
+        left: 50px;top: 150px;
+        background-color:violet;
+        }
+</style>
+<body>
+    <div id="div1">1</div>
+    <div id="div2">2</div>
+    <div id="div3">3</div>
+</body>
+</html>
