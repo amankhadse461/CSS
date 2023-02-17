@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applying roman numerals styling to the counter
+output</title>
+</head>
+<style>
+    body {
+counter-reset: item-counter;
+}
+.item {
+counter-increment: item-counter;
+}
+.item:before {
+content: counter(item-counter, lower-roman) ". "; /* by specifying the upper-roman as style the
+output would be in roman numbers */
+}
+</style>
+<body>
+<h1>CSS</h1>
+<div class='item'>CSS stands for Cascading Style Sheets</div>
+<div class='item'>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</div>
+<div class='item'>CSS saves a lot of work. It can control the layout of multiple web pages all at once</div>
+</body>
+</html>
