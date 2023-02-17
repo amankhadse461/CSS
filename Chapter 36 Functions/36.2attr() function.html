@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr() function</title>
+</head>
+<style>
+    blockquote[data-mark]::before,
+    blockquote[data-mark]::after {
+    content: attr(data-mark);
+     }
+</style>
+<body>
+    <blockquote data-mark='hello'></blockquote>
+</body>
+</html>
