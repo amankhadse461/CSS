@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using masks to cut a hole in the middle of an
+        image</title>
+</head>
+<style>
+    div {
+        width: 1500px;
+        height: 1000px;
+        background: url(car.jpg);
+        background-repeat: no-repeat;
+        image-rendering: auto;
+        mask-image: radial-gradient(circle farthest-side at center, transparent 49%, white 50%); /* check
+        remarks before using */
+        }
+</style>
+<body>
+    <div></div>
+</body>
+</html>
