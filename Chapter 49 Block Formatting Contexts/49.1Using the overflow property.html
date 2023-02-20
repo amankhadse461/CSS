@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using the overflow property</title>
+</head>
+<style>
+    img{
+float:left;
+width:100px;
+margin:0 10px;
+}
+.div1{
+background:#f1f1f1;
+/* does not create block formatting context */
+}
+.div2{
+background:#f1f1f1;
+overflow:hidden;
+/* creates block formatting context */
+}
+</style>
+<body>
+    <img src="blockchain.jpg">
+    <div class="div1">A blockchain is a type of distributed database or ledger—one of today's top tech trends—which means the power to update a blockchain is distributed between the nodes, or participants, of a public or private computer network. This is known as distributed ledger technology, or DLT</div>
+     <img src="blockchain.jpg">
+    <div class="div2">A blockchain is a type of distributed database or ledger—one of today's top tech trends—which means the power to update a blockchain is distributed between the nodes, or participants, of a public or private computer network. This is known as distributed ledger technology, or DLT</div>
+</body>
+</html>
