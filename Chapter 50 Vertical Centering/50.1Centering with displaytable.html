@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering with display: table</title>
+</head>
+<style>
+ body{
+        background-color: aqua;
+    }
+.wrapper {
+height: 600px;
+text-align: center;
+}
+.outer {
+display: table;
+height: 100%;
+width: 100%;
+}
+.outer .inner {
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+}
+
+</style>
+<body>
+<div class="wrapper">
+<div class="outer">
+<div class="inner">
+    <!-- <img src="ethereum-logo-portrait-black-gray.png" class="centre"> -->
+Ethereum is a decentralized, open-source blockchain with smart contract functionality. Ether is the native cryptocurrency of the platform. Among cryptocurrencies, ether is second only to bitcoin in market capitalization
+</div>
+</div>
+</div>
+</body>
+</html>

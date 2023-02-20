@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering with pseudo element</title>
+</head>
+<style>
+    .wrapper{
+        min-height: 600px;
+        }
+        .wrapper:before{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        }.content {
+            display: inline-block;
+            height: 80px;
+            vertical-align: middle;
+            }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="content">A blockchain is a type of distributed database or ledger—one of today's top tech trends—which means the power to update a blockchain is distributed between the nodes, or participants, of a public or private computer network. This is known as distributed ledger technology, or DLT</div>
+        </div>
+</body>
+</html>
